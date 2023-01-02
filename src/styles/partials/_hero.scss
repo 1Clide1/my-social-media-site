@@ -1,12 +1,37 @@
+@use './variables';
 .header {
-  background-color: var(--color1);
-  color: var(--text-color);
-  font-weight: var(--font-weight);
-  padding: 0.3em;
-  border-radius: 0 0 0.5rem 0.5rem;
+  padding: 5px;
+  // header font
+  font-family: var(--header-font);
+  font-weight: var(--bold-font);
+  background-color: var(--secondary-color);
 }
 
 .header-title {
+  pointer-events: none;
+  display: inline-block;
+  color: var(--text-color);
   text-transform: capitalize;
-  text-align: center;
+  margin-left: 2rem;
+  font-size: var(--font-size-800);
+  font-weight: var(--bold-font);
+}
+
+.nav-section {
+  padding: 5px;
+  background-color: var(--dark-accent-color);
+}
+
+.menu-icon-section {
+  font-size: var(--font-size-800);
+  color: var(--secondary-color);
+}
+.menu-icon::before {
+  cursor: pointer;
+}
+.menu-icon:hover {
+  color: var(--third-color);
+  .menu-icon:focus {
+    color: var(--third-color);
+  }
 }

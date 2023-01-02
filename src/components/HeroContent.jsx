@@ -1,9 +1,9 @@
 import '../styles/partials/_hero.scss';
-
+import Nav from './nav';
 const HeroSection = () => {
   return (
     <header className='header'>
-      <h1 className='header-title'>Webpack Starter Pack</h1>
+      <Nav />
     </header>
   );
 };

@@ -1,4 +1,5 @@
 // here for more generic rules instead of more specific partials for specific pages or components
 body {
-  background-color: var(--color2);
+  background-color: var(--bg-color);
+  font-family: var(--body-font);
 }

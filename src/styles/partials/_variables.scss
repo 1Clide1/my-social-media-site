@@ -1,6 +1,24 @@
-:root{
-  --bold-font: font-weight: 700;
-  --color1: rgb(102, 210, 247);
-  --color2: rgb(78, 136, 184);
-  --text-color: rgb(2, 34, 65);
+:root {
+  // colors
+  --bg-color: #13011a;
+  --primary-color: #2d033b;
+  --secondary-color: #810ca8;
+  --third-color: #c147e9;
+  --dark-accent-color: #0b010f;
+  --text-color: #e5b8f4;
+  // fonts
+  --header-font: 'Black Ops One', cursive;
+  --body-font: 'Coda', cursive;
+  // font weight
+  --bold-font: 800;
+  --regular-font: 300;
+  // font sizes
+  --font-size-100: 0.5rem;
+  --font-size-200: 0.7rem;
+  --font-size-300: 1rem;
+  --font-size-400: 1.2rem;
+  --font-size-500: 1.5rem;
+  --font-size-600: 1.7rem;
+  --font-size-700: 2rem;
+  --font-size-800: 3rem;
 }

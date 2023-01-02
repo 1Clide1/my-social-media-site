@@ -1,7 +1,7 @@
 {
-  "name": "noteify",
+  "name": "clide",
   "version": "1.0.0",
-  "description": "notes taking app with old tech stack",
+  "description": "a site to showcase my social media",
   "private": true,
   "scripts": {
     "start": "webpack serve --mode development --open --hot --client-overlay",
