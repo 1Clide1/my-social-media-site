@@ -18,6 +18,10 @@ const plugins = [
   new HtmlWebpackPlugin({
     // my index html file is in the public folder
     template: path.join(__dirname, 'public', 'index.html'),
+    // don't need this anymore but cool to know this option exists
+    // favicon: 'public/Assets/favicon/favicon32x32.ico',
+    // for production use
+    minify: true,
   }),
   new EslintPlugin(),
   new CompressionPlugin({
@@ -69,10 +73,16 @@ module.exports = {
           'sass-loader',
         ],
       },
+      // looking for html
+      {
+        test: /index\.html$/i,
+        loader: 'html-loader',
+      },
       // this is for images
       {
-        test: /\.(png|jpe?g|gif|svg)$/i,
-        type: 'asset',
+        test: /\.(png|jpe?g|gif|ico|svg)$/i,
+        type: 'asset/resource',
+        exclude: /node_modules/,
       },
 
       //   module rules for bable

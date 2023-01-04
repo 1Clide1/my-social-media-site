@@ -12,7 +12,7 @@
   "author": "Brandon Diaz",
   "license": "UNLICENSED",
   "dependencies": {
-    "jwt-decode": "^3.1.2",
+    "@react-spring/web": "^9.6.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -33,6 +33,7 @@
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-webpack-plugin": "^3.2.0",
+    "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
     "postcss": "^8.4.18",
