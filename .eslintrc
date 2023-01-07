@@ -19,7 +19,9 @@
   "rules": {
     // not worth my time prefering export defaults so these rules help with that
     "import/prefer-default-export": "off",
-    "import/no-default-export": "error"
+    "import/no-default-export": "error",
+    // removes the single quote rule
+    "avoidEscape": true
   },
   "overrides": [
     {

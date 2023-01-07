@@ -1,4 +1,4 @@
-import HeroSection from './components/HeroContent';
+import HeroSection from './components/header/HeroContent';
 import Homepage from './pages/Homepage';
 import './styles/partials/_app.scss';
 const App = () => {
