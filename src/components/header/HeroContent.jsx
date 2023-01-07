@@ -1,4 +1,5 @@
 import '../../styles/partials/_hero.scss';
+
 import Nav from '../nav/nav';
 const HeroSection = () => {
   return (
