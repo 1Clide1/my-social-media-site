@@ -22,16 +22,54 @@
   background-color: var(--dark-accent-color);
 }
 
+// menu icon
 .menu-icon-section {
   font-size: var(--font-size-800);
   color: var(--secondary-color);
+  .menu-icon {
+    &:before {
+      margin-left: 0.5rem;
+    }
+    &:hover {
+      color: var(--third-color);
+    }
+    &:focus {
+      color: var(--third-color);
+      transform: scale(0.5);
+      outline: 1px solid var(--vibrant-accent-color);
+      outline-offset: 0.4rem;
+      animation: scale-transition 120ms ease-in-out normal none;
+    }
+  }
+  // nav icon button
+  .nav-btn {
+    // get rid of the default button styling because i just want the
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font: inherit;
+    outline: none;
+  }
 }
-.menu-icon::before {
-  cursor: pointer;
+.icon-btn-section {
+  display: inline-block;
+  position: relative;
+  margin-top: 2rem;
 }
-.menu-icon:hover {
+.icon-btn {
+  background: none;
+  border: none;
   color: var(--third-color);
-  .menu-icon:focus {
-    color: var(--third-color);
+  font-size: var(--font-size-300);
+}
+@keyframes scale-transition {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.8);
   }
 }
