@@ -32,7 +32,8 @@ const plugins = [
 //  if webpack is in production build
 if (process.env.NODE_ENV === 'production') {
   mode = 'production';
-  // not sure if the browserslist is actually bugged still but if it ain't broke I will not change this
+  // not sure if the browserslist is actually
+  // bugged still but if it ain't broke I will not change this
   target = 'browserslist';
 }
 
@@ -43,8 +44,8 @@ if (process.env.SERVE) {
 
 // webpack code wrapped to be exported
 module.exports = {
-  //setting the mode to a variable that way I can switch between dev and production
-  mode: mode,
+  // setting the mode to a variable that way I can switch between dev and production
+  mode,
 
   // entry point of my app
   entry: './src/index.jsx',
@@ -102,9 +103,9 @@ module.exports = {
     ],
   },
 
-  plugins: plugins,
+  plugins,
 
-  target: target,
+  target,
 
   //   possible js extensions
   resolve: {
