@@ -17,11 +17,14 @@
   // needed to include ./index.js for the eslinter to properly work
   "extends": ["airbnb", "airbnb/hooks"],
   "rules": {
-    // not worth my time prefering export defaults so these rules help with that
+    // these two rules are here because i could not find a valid solution for these errors
     "import/prefer-default-export": "off",
-    "import/no-default-export": "error",
-    // removes the single quote rule
-    "avoidEscape": true
+    "import/no-default-export": "off",
+    // proper quotes rule, should have checked not sure how to specify single only for jsx as that is how i set up my priettier
+    "quotes": "off",
+    // just incase quotes doesn't work and i am using jsx
+    "jsx-quotes": "off",
+    "arrow-body-style": ["warn", "as-needed"]
   },
   "overrides": [
     {
