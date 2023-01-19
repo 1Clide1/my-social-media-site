@@ -2,8 +2,19 @@
 
 export const hrefLinks = [
   {
-    cName: 'lni lni-youtube',
+    buttonClassName: 'icon-btn youtube',
+    iconClassName: 'lni lni-youtube youtube-icon',
     link: 'https://www.youtube.com/@Clide0_0/',
+    rel: 'noopener noreferrer',
+    target: '_blank',
+    content: 'youtube',
   },
-  { cName: 'lni lni-tiktok', link: 'https://www.tiktok.com/@clide0_0' },
+  {
+    buttonClassName: 'icon-btn tiktok',
+    iconClassName: 'lni lni-tiktok tiktok-icon',
+    link: 'https://www.tiktok.com/@clide0_0',
+    rel: 'noopener noreferrer',
+    target: '_blank',
+    content: 'tiktok',
+  },
 ];
