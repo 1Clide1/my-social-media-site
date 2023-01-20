@@ -1,5 +1,6 @@
-// here for more generic rules instead of more specific partials for specific pages or components
+// more generic styling here if needed, specific styling will be for partials
 body {
   background-color: var(--bg-color);
+  color: var(--text-color);
   font-family: var(--body-font);
 }

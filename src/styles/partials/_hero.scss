@@ -1,4 +1,11 @@
 @use './variables';
+@use './breakpoints' as b;
+
+.nav-section {
+  padding: 5px;
+  background-color: var(--dark-accent-color);
+}
+
 .header {
   padding: 5px;
   // header font
@@ -13,58 +20,87 @@
   color: var(--text-color);
   text-transform: capitalize;
   margin-left: 2rem;
-  font-size: var(--font-size-800);
+  font-size: var(--size-800);
   font-weight: var(--bold-font);
 }
 
-.nav-section {
-  padding: 5px;
-  background-color: var(--dark-accent-color);
+// nav icon button
+.nav-btn {
+  // get rid of the default button styling because i just want the
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+  outline: none;
 }
 
-// menu icon
-.menu-icon-section {
-  font-size: var(--font-size-800);
-  color: var(--secondary-color);
-  .menu-icon {
-    &:before {
-      margin-left: 0.5rem;
-    }
-    &:hover {
-      color: var(--third-color);
-    }
-    &:focus {
-      color: var(--third-color);
-      transform: scale(0.5);
-      outline: 1px solid var(--vibrant-accent-color);
-      outline-offset: 0.4rem;
-      animation: scale-transition 120ms ease-in-out normal none;
-    }
-  }
-  // nav icon button
-  .nav-btn {
-    // get rid of the default button styling because i just want the
-    background: none;
-    color: inherit;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    font: inherit;
-    outline: none;
-  }
-}
 // social media icon buttons on the right side of the site
 .icon-btn-section {
-  display: inline-block;
-  position: relative;
-  margin-top: 2rem;
+  // position: relative;
+  // float: right;
+  // margin: 15px;
+  // @include b.breakpoint(mobile) {
+  //   margin: 25px;
+  // }
+  display: inline-flex;
+  justify-content: center;
+  flex-basis: 100%;
+  margin-left: 40em;
+  @include b.breakpoint(tablet) {
+    margin-left: auto;
+  }
 }
+
 .icon-btn {
-  background: none;
+  cursor: pointer;
+  border-radius: 50%;
   border: none;
-  color: var(--third-color);
-  font-size: var(--font-size-300);
+  margin: 10px;
+  font-size: var(--size-600);
+  padding: var(--size-100);
 }
+
+// .icon-btn {
+//   display: flex;
+//   flex-direction: column;
+//   // margin: 10px;
+//   background: none;
+//   border: none;
+//   background-color: inherit;
+//   color: var(--dark-accent-color);
+//   font-size: var(--size-600);
+//   border-radius: 50%;
+//   padding: var(--size-100);
+//   @include b.breakpoint(mobile) {
+//     font-size: var(--size-200);
+//     margin: 11px;
+//   }
+
+//   .youtube {
+//     background-color: var(--red-accent-color);
+//     backdrop-filter: blur(5px);
+//     &:hover {
+//       transition: 200ms ease-in;
+//       background-color: var(--light-red-accent-color);
+//     }
+//   }
+
+//   .tiktok {
+//     background-color: var(--blue-accent-color);
+//     backdrop-filter: blur(5px);
+//     &:hover {
+//       transition: 200ms ease-in;
+//       background-color: var(--light-blue-accent-color);
+//     }
+//   }
+
+//   a {
+//     text-decoration: none;
+//   }
+// }
+
 @keyframes scale-transition {
   0% {
     transform: scale(1);
