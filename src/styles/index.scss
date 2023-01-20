@@ -1,4 +1,5 @@
 // import all of the partials/other sass files here
+@forward './partials/breakpoints';
 @forward './partials/boilerplate';
 @forward './partials/variables';
 @forward './partials/hero';
