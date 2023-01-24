@@ -38,18 +38,18 @@
 
 // social media icon buttons on the right side of the site
 .icon-btn-section {
-  // position: relative;
-  // float: right;
-  // margin: 15px;
-  // @include b.breakpoint(mobile) {
-  //   margin: 25px;
-  // }
-  display: inline-flex;
-  justify-content: center;
-  flex-basis: 100%;
-  margin-left: 40em;
+  position: relative;
+  float: right;
+  margin: 15px;
+  overflow: hidden;
+  // margin-left: 40em;
   @include b.breakpoint(tablet) {
+    display: inline-flex;
+    justify-content: center;
+    flex-basis: 100%;
     margin-left: auto;
+    margin: 0;
+    float: none;
   }
 }
 
@@ -60,6 +60,28 @@
   margin: 10px;
   font-size: var(--size-600);
   padding: var(--size-100);
+  .anchor-text {
+    opacity: 0;
+    position: absolute;
+  }
+  .youtube-icon {
+    color: var(--accent-white);
+  }
+  .tiktok-icon {
+    color: var(--dark-accent-color);
+  }
+}
+
+.lni {
+  text-decoration: none;
+  font-size: var(--size-800);
+  border-radius: 50%;
+}
+.youtube {
+  background-color: var(--red-accent-color);
+}
+.tiktok {
+  background-color: var(--accent-aqua);
 }
 
 // .icon-btn {
