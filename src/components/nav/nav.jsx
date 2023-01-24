@@ -26,7 +26,7 @@ function Nav() {
               rel={hrefProps.rel}
               target={hrefProps.target}
             >
-              {/* {hrefProps.content} */}
+              <p className={hrefProps.anchorClassName}>{hrefProps.content}</p>
             </a>
           </button>
         ))}
