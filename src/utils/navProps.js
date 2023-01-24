@@ -8,6 +8,7 @@ export const hrefLinks = [
     rel: 'noopener noreferrer',
     target: '_blank',
     content: 'youtube',
+    anchorClassName: 'anchor-text',
   },
   {
     buttonClassName: 'icon-btn tiktok',
@@ -16,5 +17,6 @@ export const hrefLinks = [
     rel: 'noopener noreferrer',
     target: '_blank',
     content: 'tiktok',
+    anchorClassName: 'anchor-text',
   },
 ];
