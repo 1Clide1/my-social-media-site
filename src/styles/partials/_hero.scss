@@ -61,6 +61,7 @@
   font-size: var(--size-600);
   padding: var(--size-100);
   .anchor-text {
+    // should make this only visible to screen readers
     opacity: 0;
     position: absolute;
   }
