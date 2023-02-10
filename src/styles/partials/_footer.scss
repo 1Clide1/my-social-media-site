@@ -1,6 +1,8 @@
+@use './breakpoints' as b;
+
 .footer-section {
   // to keep the footer on the bottom
-  position: fixed;
+  position: absolute;
   width: 100%;
   bottom: 0;
   //  general styling
@@ -9,6 +11,10 @@
   justify-content: center;
   gap: 0.3rem;
   background-color: var(--dark-accent-color);
+  // this fixes the landscape mobile view
+  @include b.breakpoint(tablet) {
+    position: relative;
+  }
 }
 .footer-text {
   font-size: var(--size-500);
