@@ -12,7 +12,7 @@
   "author": "Brandon Diaz",
   "license": "UNLICENSED",
   "dependencies": {
-    "@react-spring/web": "^9.7.2",
+    "framer-motion": "^10.12.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
