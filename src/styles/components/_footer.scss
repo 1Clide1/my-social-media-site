@@ -1,0 +1,27 @@
+@use './breakpoints' as b;
+
+.footer-section {
+  // to keep the footer on the bottom
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  //  general styling
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.3rem;
+  background-color: var(--dark-accent-color);
+  // this fixes the landscape mobile view
+  @include b.breakpoint(tablet) {
+    position: relative;
+  }
+}
+.footer-text {
+  font-size: var(--size-500);
+}
+.footer-anchor {
+  text-decoration: none;
+}
+.footer-anchor-text {
+  color: var(--vibrant-accent-color);
+}
