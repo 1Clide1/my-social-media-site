@@ -1,5 +1,8 @@
 import React from 'react';
 
+// styles
+import '../../styles/components/_footer.scss';
+
 function Footer() {
   return (
     <footer className='footer-section'>

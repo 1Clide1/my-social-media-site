@@ -1,7 +1,7 @@
 import React from 'react';
 
 // using the same sass file for the
-import '../../styles/partials/_hero.scss';
+import '../../styles/components/_nav.scss';
 
 // import { useState } from 'react';
 

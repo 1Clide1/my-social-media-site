@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../../styles/partials/_hero.scss';
+import '../../styles/components/_header.scss';
 
 import Nav from '../nav/Nav';
 

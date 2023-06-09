@@ -1,15 +1,14 @@
 // imports
 import React from 'react';
-// react spring
-import { animated } from '@react-spring/web';
+
 // styles
-import '../styles/partials/_intro.scss';
+import '../styles/pages/_intro.scss';
 
 function Intro() {
   return (
-    <animated.div>
+    <div>
       <p>Clide</p>
-    </animated.div>
+    </div>
   );
 }
 
