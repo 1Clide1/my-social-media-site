@@ -1,6 +1,6 @@
 :root {
   // colors
-  
+
   //body color
   --bg-color: #e1d9f3;
   --primary-color: #2d033b;
@@ -8,7 +8,9 @@
   --third-color: #c147e9;
   --dark-accent-color: #0b010f;
   --vibrant-accent-color: #d16ff1;
-  --text-color: #e5b8f4;
+  --text-color: #9581c1;
+  --start-title-bgcolor: #e3dcf3;
+  --start-text-color: #513888;
   --red-accent-color: #fb747e;
   --accent-dark-red: #30171a36;
   --light-red-accent-color: #fab2b7;
@@ -30,4 +32,9 @@
   --size-600: 1.7rem;
   --size-700: 2rem;
   --size-800: 3rem;
+  --size-850: 4rem;
+  --size-900: 5.5rem;
+
+  // other
+  --max-width: 1180px; // this is apparently as max width as max width gets!
 }
