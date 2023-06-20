@@ -1,0 +1,35 @@
+// import a mixin
+@use '../utility/mixins' as mixin;
+
+// styling for
+.intro-div {
+  display: flex;
+  justify-content: center;
+  .intro-text {
+    font-family: var(--header-font);
+    font-size: var(--size-900);
+    text-align: center;
+    @include mixin.breakpoint(tablet) {
+      font-size: var(--size-850);
+    }
+  }
+}
+.intro-title {
+  display: inline-flex;
+  margin-left: 9.2em;
+  font-size: var(--size-900);
+  border-radius: 1em 1em 0.2em 0.2em;
+  padding: 0.4em;
+  background: var(--start-title-bgcolor);
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  @include mixin.breakpoint(tablet) {
+    font-size: var(--size-850);
+    margin-left: 1.5em;
+  }
+}
+.intro-start-text {
+  margin-top: 5em;
+  color: var(--start-text-color);
+  font-size: var(--size-600);
+  text-align: center;
+}
